@@ -4,6 +4,10 @@ import ImageHover from '../components/ImageHover'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 
+import image1 from '../assets/image1.png'
+import image2 from '../assets/image2.png'
+import image3 from '../assets/image3.png'
+
 const DivsSection = () => {
 
     useGSAP(() => {
@@ -38,7 +42,7 @@ const DivsSection = () => {
      
                 {/* 1 */}
                 <div className='divEffect' style={{clipPath: 'polygon(0 100%, 100% 100%, 100% 0, 0 0)' }}>
-                    <ImageHover img='src/assets/image1.png' heading='Loop Earplugs' sub1='UX UI' sub2='Branding' sub3='Digital'/>
+                    <ImageHover img={image1} heading='Loop Earplugs' sub1='UX UI' sub2='Branding' sub3='Digital'/>
                 </div>
 
                 {/* 2 */}
@@ -56,12 +60,12 @@ const DivsSection = () => {
                 
                 {/* 3 */}
                 <div className='divEffect' style={{clipPath: 'polygon(0 100%, 100% 100%, 100% 0, 0 0)' }}>
-                    <ImageHover img='src/assets/image2.png' heading='Co Office' sub1='Branding' sub2='WebDesign' sub3='Web Development'/>
+                    <ImageHover img={image2} heading='Co Office' sub1='Branding' sub2='WebDesign' sub3='Web Development'/>
                 </div>
                
                 {/* 4 */}
                 <div className='divEffect' style={{clipPath: 'polygon(0 100%, 100% 100%, 100% 0, 0 0)' }}>
-                     <ImageHover img='src/assets/image3.png' heading='Metapsych' sub1='UX UI' sub2='WebDesign' sub3='Web Development'/>
+                     <ImageHover img={image3} heading='Metapsych' sub1='UX UI' sub2='WebDesign' sub3='Web Development'/>
                 </div>
 
             </div>

@@ -4,6 +4,13 @@ import ImageHover from '../components/ImageHover'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 
+import image3 from '../assets/image3.png'
+import image4 from '../assets/image4.png'
+import image5 from '../assets/image5.png'
+import image6 from '../assets/image6.png'
+import image7 from '../assets/image7.png'
+import image8 from '../assets/image8.png'
+import image9 from '../assets/image9.png'
 
 const WorkDivSection = () => {
   useGSAP(() => {
@@ -38,7 +45,7 @@ const WorkDivSection = () => {
      
                 {/* 1 */}
                 <div className='divEffect' style={{clipPath: 'polygon(0 100%, 100% 100%, 100% 0, 0 0)' }}>
-                    <ImageHover img='src/assets/image4.png' heading='Loop Earplugs' sub1='UX UI' sub2='Branding' sub3='Digital'/>
+                    <ImageHover img={image4} heading='Loop Earplugs' sub1='UX UI' sub2='Branding' sub3='Digital'/>
                 </div>
 
                 {/* 2 */}
@@ -56,32 +63,32 @@ const WorkDivSection = () => {
                 
                 {/* 3 */}
                 <div className='divEffect' style={{clipPath: 'polygon(0 100%, 100% 100%, 100% 0, 0 0)' }}>
-                    <ImageHover img='src/assets/image5.png' heading='Co Office' sub1='Branding' sub2='WebDesign' sub3='Web Development'/>
+                    <ImageHover img={image5} heading='Co Office' sub1='Branding' sub2='WebDesign' sub3='Web Development'/>
                 </div>
                
                 {/* 4 */}
                 <div className='divEffect' style={{clipPath: 'polygon(0 100%, 100% 100%, 100% 0, 0 0)' }}>
-                     <ImageHover img='src/assets/image3.png' heading='Metapsych' sub1='UX UI' sub2='WebDesign' sub3='Web Development'/>
+                     <ImageHover img={image3} heading='Metapsych' sub1='UX UI' sub2='WebDesign' sub3='Web Development'/>
                 </div>
                
                 {/* 5 */}
                 <div className='divEffect' style={{clipPath: 'polygon(0 100%, 100% 100%, 100% 0, 0 0)' }}>
-                     <ImageHover img='src/assets/image6.png' heading='Metapsych' sub1='UX UI' sub2='WebDesign' sub3='Web Development'/>
+                     <ImageHover img={image6} heading='Metapsych' sub1='UX UI' sub2='WebDesign' sub3='Web Development'/>
                 </div>
 
                  {/* 6 */}
                 <div className='divEffect' style={{clipPath: 'polygon(0 100%, 100% 100%, 100% 0, 0 0)' }}>
-                     <ImageHover img='src/assets/image7.png' heading='Metapsych' sub1='UX UI' sub2='WebDesign' sub3='Web Development'/>
+                     <ImageHover img={image7} heading='Metapsych' sub1='UX UI' sub2='WebDesign' sub3='Web Development'/>
                 </div>
 
                 {/* 7 */}
                 <div className='divEffect' style={{clipPath: 'polygon(0 100%, 100% 100%, 100% 0, 0 0)' }}>
-                    <ImageHover img='src/assets/image8.png' heading='Co Office' sub1='Branding' sub2='WebDesign' sub3='Web Development'/>
+                    <ImageHover img={image8} heading='Co Office' sub1='Branding' sub2='WebDesign' sub3='Web Development'/>
                 </div>
                
                 {/* 8 */}
                 <div className='divEffect' style={{clipPath: 'polygon(0 100%, 100% 100%, 100% 0, 0 0)' }}>
-                     <ImageHover img='src/assets/image9.png' heading='Metapsych' sub1='UX UI' sub2='WebDesign' sub3='Web Development'/>
+                     <ImageHover img={image9} heading='Metapsych' sub1='UX UI' sub2='WebDesign' sub3='Web Development'/>
                 </div>
 
             </div>

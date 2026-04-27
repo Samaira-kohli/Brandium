@@ -4,6 +4,10 @@ import { Draggable } from 'gsap/Draggable'
 import { useGSAP } from '@gsap/react'
 import ButtonComponent from './ButtonComponent'
 
+import globe from '../assets/globe.png'
+import slider2 from '../assets/slider2.png'
+import slider1 from '../assets/slider1.png'
+
 gsap.registerPlugin(Draggable)
 
 const CardSlider = () => {
@@ -54,7 +58,7 @@ const CardSlider = () => {
         <div ref={containerRef} className="overflow-hidden w-full py-10">
             <div ref={sliderRef} className="flex gap-5">
                 {/* div1 */}
-                <div className="flex-none h-[500px] w-[362px] bg-amber-900 rounded-2xl bg-[url('src/assets/slider1.png')] bg-cover"></div>
+                <div style={{ backgroundImage: `url(${slider1})` }} className="flex-none h-[500px] w-[362px] bg-amber-900 rounded-2xl bg-cover"></div>
 
                 {/* div2 */}
                 <div className="flex-none h-[350px] w-[362px] bg-[#F5F5F5] rounded-2xl p-6 flex flex-col justify-between">
@@ -71,7 +75,7 @@ const CardSlider = () => {
                 {/* div4 */}
                 <div className="flex-none h-[500px] w-[362px] bg-[#D2FF00] rounded-2xl p-6 flex flex-col gap-8 items-center">
                     <h3>Designed in India, scaled globally</h3>
-                    <img src='src/assets/globe.png' />
+                    <img src={globe} alt='globe' />
                 </div>
 
                 {/* div5 */}
@@ -91,7 +95,7 @@ const CardSlider = () => {
                 </div>
 
                 {/* div7 */}
-                <div className="flex-none h-[500px] w-[362px] p-6 rounded-2xl bg-[url('src/assets/slider2.png')] bg-cover">
+                <div className={`flex-none h-[500px] w-[362px] p-6 rounded-2xl bg-cover`} style={{ backgroundImage: `url(${slider2})` }}>
                     <div className='h-7 overflow-hidden '>
                         <div ref={textRef} className=' flex flex-col opacity-60'>
                             <h4 className='border-1 border-amber-500/0'>Legal</h4>
@@ -127,16 +131,11 @@ const CardSlider = () => {
                             <h4 className='border-1 border-fuchsia-400/0'>Travel</h4>
                         </div>
                     </div>
-
                 </div>
-
                 <div className='bg-amber-800 opacity-0 h-100 -ml-1' >.</div>
 
-
-
-
                 {/* div1 */}
-                <div className="flex-none h-[500px] w-[362px] bg-amber-900 rounded-2xl bg-[url('src/assets/slider1.png')] bg-cover"></div>
+                <div style={{ backgroundImage: `url(${slider1})` }} className="flex-none h-[500px] w-[362px] bg-amber-900 rounded-2xl bg-cover"></div>
 
                 {/* div2 */}
                 <div className="flex-none h-[350px] w-[362px] bg-[#F5F5F5] rounded-2xl p-6 flex flex-col justify-between">
@@ -153,7 +152,7 @@ const CardSlider = () => {
                 {/* div4 */}
                 <div className="flex-none h-[500px] w-[362px] bg-[#D2FF00] rounded-2xl p-6 flex flex-col gap-8 items-center">
                     <h3>Designed in India, scaled globally</h3>
-                    <img src='src/assets/globe.png' />
+                    <img src={globe} alt='globe' />
                 </div>
 
                 {/* div5 */}
@@ -173,7 +172,7 @@ const CardSlider = () => {
                 </div>
 
                 {/* div7 */}
-                <div className="flex-none h-[500px] w-[362px] p-6 rounded-2xl bg-[url('src/assets/slider2.png')] bg-cover">
+                <div className={`flex-none h-[500px] w-[362px] p-6 rounded-2xl bg-cover`} style={{ backgroundImage: `url(${slider2})` }}>
                     <div className='h-7 overflow-hidden '>
                         <div ref={textRef} className=' flex flex-col opacity-60'>
                             <h4 className='border-1 border-amber-500/0'>Legal</h4>
@@ -209,8 +208,10 @@ const CardSlider = () => {
                             <h4 className='border-1 border-fuchsia-400/0'>Travel</h4>
                         </div>
                     </div>
-
                 </div>
+
+
+
 
                 <div className='bg-amber-800 opacity-0 h-100 -ml-1' >.</div>
 

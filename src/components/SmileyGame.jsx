@@ -2,6 +2,7 @@ import { useRef } from "react";
 import Matter from "matter-js";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import goodnews from '../assets/goodnews.png'
 
 const SmileyGame = () => {
     const sceneRef = useRef(null);
@@ -130,7 +131,7 @@ const SmileyGame = () => {
 
     return (
         <div className="relative md:h-[89.2vh] h-[90vw] lg:w-[45vw] w-[100vw] overflow-hidden cursor-pointer">
-            <img src={'/src/assets/goodnews.png'} className="absolute inset-0 w-full h-full object-cover z-0" />
+            <img src={goodnews} className="absolute inset-0 w-full h-full object-cover z-0" />
             <div ref={sceneRef} className="absolute inset-0 z-10" onMouseMove={handleEnter} onMouseLeave={handleLeave}/> //canvas
             {/* 🟡 Floating View Circle */}
             <div ref={cursorRef} className=' pointer-events-none absolute top-0 left-0 w-24 h-24 bg-white/40 backdrop-blur-md rounded-full flex items-center justify-center text-sm text-black'

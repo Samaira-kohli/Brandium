@@ -52,11 +52,11 @@ const HomeSection = () => {
   })
 
   return (
-    <section className='px-4 sm:px-6 md:px-10 lg:px-[2.2rem]  py-20 md:mt-20 overflow-hidden'>
+    <section className='px-4 sm:px-6 md:px-10 lg:px-[2.2rem]  py-20 overflow-hidden'>
 
       <div
         ref={mainRef}
-        className='w-full  lg:w-[60%] [perspective:900px]' 
+        className='w-full md:mt-20  lg:w-[60%] [perspective:900px]' 
       >
         <h2
           ref={headingRef}

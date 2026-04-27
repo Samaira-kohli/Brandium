@@ -4,10 +4,22 @@ import gsap from 'gsap'
 import { SplitText } from 'gsap/SplitText'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
+import logo0 from '../assets/logo0.png'
+import logo1 from '../assets/logo1.png'
+import logo2 from '../assets/logo2.png'
+import logo3 from '../assets/logo3.png'
+import logo4 from '../assets/logo4.png'
+import logo5 from '../assets/logo5.png'
+import logo6 from '../assets/logo6.png'
+import logo7 from '../assets/logo7.png'
+import logo8 from '../assets/logo8.png'
+import logo9 from '../assets/logo9.png'
+import logo10 from '../assets/logo10.png'
+
 gsap.registerPlugin(SplitText, ScrollTrigger)
 
 const Work3Section = () => {
-
+    const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9, logo10]
     const mainRef = useRef(null)
     const paraRef = useRef()
     const headingRef = useRef(null)
@@ -124,12 +136,16 @@ const Work3Section = () => {
             {/* logos */}
             <div className='overflow-hidden top-0 h-[80vh] absolute pt-30' onWheel={handleWheel}>
                 <div ref={wheelRef} className='flex gap-20 w-max pt-50 md:pt-70'>
-                    {Array.from({ length: 10 }).map((img, i) => (
-                        <img className='w-32 md:w-44 lg:w-52 h-auto object-contain' key={`a${i}`} src={`src/assets/logo${i}.png`} alt={`image${i}`} />
-                    ))}
-                    {Array.from({ length: 10 }).map((img, i) => (
-                        <img className='w-32 md:w-44 lg:w-52 h-auto object-contain' key={`b${i}`} src={`src/assets/logo${i}.png`} alt={`image${i}`} />
-                    ))}
+                    {
+                        logos.map((img, i) => (
+                            <img className='w-32 md:w-44 lg:w-52 h-auto object-contain' key={`logo${i}`} src={img} alt={`image${i}`} />
+                        ))
+                    }
+                    {
+                        logos.map((img, i) => (
+                            <img className='w-32 md:w-44 lg:w-52 h-auto object-contain' key={`logo${i}`} src={img} alt={`image${i}`} />
+                        ))
+                    }
                 </div>
             </div>
         </section>

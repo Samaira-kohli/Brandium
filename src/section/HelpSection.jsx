@@ -4,6 +4,7 @@ import { faStarOfLife } from '@fortawesome/free-solid-svg-icons'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { SplitText } from 'gsap/SplitText'
+import image3 from '../assets/image3.png'
 
 const HelpSection = () => {
     const mainRef = useRef(null)
@@ -56,7 +57,7 @@ const HelpSection = () => {
 
                 <div className="w-full lg:w-93 flex-shrink-0">
                     <img
-                        src="src/assets/image3.png"
+                        src={image3}
                         alt="Service Preview"
                         className="w-full h-auto rounded-xl object-cover"
                     />
