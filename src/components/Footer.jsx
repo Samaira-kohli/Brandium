@@ -8,6 +8,7 @@ const Footer = () => {
 
     useGSAP(() => {
         const logosplit = SplitText.create('.logo', { type: 'chars' })
+
         gsap.from(logosplit.chars, {
             duration: 0.7,
             stagger: 0.04,
@@ -19,27 +20,44 @@ const Footer = () => {
             }
         })
     })
+
     return (
-        <footer className='logoDiv w-full h-auto bg-black text-white pt-20 pb-10 relative overflow-hidden'>
+        <footer className='logoDiv w-full bg-black text-white pt-14 md:pt-20 pb-8 md:pb-10 relative overflow-hidden'>
 
-            {/* TOP GRID */}
-            <div className='px-10 grid grid-cols-2 gap-20 relative z-10'>
+            {/* TOP */}
+            <div className='px-6 md:px-10 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 relative z-10'>
 
-                {/* LEFT BIG CTA */}
-                <div className='col-span-1 flex flex-col justify-between'>
+                {/* LEFT */}
+                <div className='flex flex-col justify-between'>
+
                     <div>
-                        <h5 className='text-white text-[3vw] leading-[1] pb-5  tracking-[-0.05em] w-[64%]'>
+
+                        <h5 className='text-4xl md:text-[3vw] leading-none tracking-[-0.05em] md:w-[64%]'>
                             Ready to turn your ideas into big moves?
                         </h5>
-                        <ButtonComponent text='Get in touch' color='white' />
+
+                        <div className='mt-6'>
+                            <ButtonComponent
+                                text='Get in touch'
+                                color='white'
+                            />
+                        </div>
+
                     </div>
+
                 </div>
 
-                <div className='flex gap-35 justify-end'>
-                    {/* NAVIGATION */}
-                    <div className='pt-1'>
-                        <p className='text-sm text-zinc-500 uppercase mb-1'>Navigation</p>
-                        <ul className='space-y-0.5 text-lg'>
+                {/* RIGHT */}
+                <div className='flex flex-col sm:flex-row justify-between md:justify-end gap-10 md:gap-35'>
+
+                    {/* NAV */}
+                    <div>
+
+                        <p className='text-sm text-zinc-500 uppercase mb-2'>
+                            Navigation
+                        </p>
+
+                        <ul className='space-y-1 text-base md:text-lg'>
                             <li className='cursor-pointer hover:text-lime-300'>Homepage</li>
                             <li className='cursor-pointer hover:text-lime-300'>Work</li>
                             <li className='cursor-pointer hover:text-lime-300'>Services</li>
@@ -48,40 +66,67 @@ const Footer = () => {
                             <li className='cursor-pointer hover:text-lime-300'>✦ Insights</li>
                             <li className='cursor-pointer hover:text-lime-300'>Contact</li>
                         </ul>
+
                     </div>
 
                     {/* SOCIAL */}
-                    <div className=''>
-                        <p className='text-sm text-zinc-500 uppercase mb-1'>Let's Connect</p>
-                        <ul className='space-y-0.5 text-lg'>
+                    <div>
+
+                        <p className='text-sm text-zinc-500 uppercase mb-2'>
+                            Let's Connect
+                        </p>
+
+                        <ul className='space-y-1 text-base md:text-lg'>
                             <li className='cursor-pointer hover:text-lime-300'>Instagram</li>
                             <li className='cursor-pointer hover:text-lime-300'>LinkedIn</li>
                             <li className='cursor-pointer hover:text-lime-300'>Facebook</li>
                         </ul>
+
                     </div>
 
                     {/* CONTACT */}
-                    <div className=''>
-                        <p className='text-sm text-zinc-500 uppercase mb-1'>Get in Touch</p>
-                        <div className='space-y-0.5 text-lg'>
+                    <div>
+
+                        <p className='text-sm text-zinc-500 uppercase mb-2'>
+                            Get in Touch
+                        </p>
+
+                        <div className='space-y-1 text-base md:text-lg'>
+
                             <p>020 210 1622</p>
                             <p>hello@brandium.nl</p>
 
-                            <div className='mt-5 leading-[1.4]'>
+                            <div className='mt-5 leading-6'>
                                 <p>Bos en Lommerplein 274</p>
                                 <p>1055 RW Amsterdam</p>
                                 <p>The Netherlands</p>
                             </div>
+
                         </div>
+
                     </div>
+
                 </div>
+
             </div>
 
-            {/* HUGE TYPOGRAPHY */}
-            <div className=' -mb-10 mt-20 w-full overflow-hidden pointer-events-none'>
-                <h5 className='logo h-62 text-[14vw] leading-none tracking-[-0.07em] font-normal text-zinc-100 whitespace-nowrap'>
-                    Brandium<span className='align-top text-[4vw]'>®</span> Agency
+            {/* LOGO */}
+            <div className='mt-16 md:mt-20 -mb-2 md:-mb-10 overflow-hidden pointer-events-none'>
+
+                <h5 className='logo text-[18vw] sm:text-[15vw] md:text-[14vw] leading-none tracking-[-0.07em] whitespace-nowrap text-zinc-100'>
+
+                    Brandium
+
+                    <span className='align-top text-[6vw] md:text-[4vw]'>
+                        ®
+                    </span>
+
+                    <span className='hidden sm:inline'>
+                        {" "}Agency
+                    </span>
+
                 </h5>
+
             </div>
 
         </footer>
