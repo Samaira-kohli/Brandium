@@ -35,8 +35,8 @@ const Loader = () => {
   return (
     <div className="main relative w-full bg-black h-screen flex justify-center items-center ">
       <div className=" py-5 overflow-hidden">
-        <p className="loader-text text-white text-2xl   translate-y-15 opacity-20">Brandium Agency</p>
-        <p className="actual-text absolute text-2xl left-1/2  -translate-1/2 top-1/2 text-white opacity-100">Brandium Agency</p>
+        {/* <p className="loader-text text-white text-2xl   translate-y-15 opacity-20">Brandium Agency</p> */}
+        <p className="actual-text absolute md:text-2xl left-1/2  -translate-1/2 top-1/2 text-white opacity-100">Brandium Agency</p>
       </div>
     </div>
   );
